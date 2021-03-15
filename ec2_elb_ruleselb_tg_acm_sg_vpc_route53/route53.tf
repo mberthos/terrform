@@ -1,5 +1,5 @@
 resource "aws_route53_record" "www" {
-  zone_id = "${aws_route53_zone.zone_name.zone_id}"
+  zone_id = "${data.aws_route53_zone.zone_name.zone_id}"
   name    = "${var.endpoint}"
   type    = "CNAME"
   ttl     = "300"

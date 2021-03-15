@@ -1,17 +1,17 @@
 resource "aws_lb" "elb_name" {
-    name = "elb_name"
+    name = "elb-name"
     load_balancer_type = "application"
     security_groups = ["${aws_security_group.lb_sg.id}"]
-    subnets = ["${aws_subnet.subnet_name}"]
+    subnets = ["${aws_subnet.subnet_name.id}"]
     idle_timeout = 120
     tags = {
-        tag1 = tag
-        tag2 = tag
+        tag1 = "tag1"
+        tag2 = "tag2"
     }
 }
 
 resource "aws_lb_listener" "lb_listener_http"{
-    load_balacer_arn = "${aws_lb.elb_name.arn}"
+    load_balancer_arn = "${aws_lb.elb_name.arn}"
     port = "80"
     protocol = "HTTP"
 
@@ -22,7 +22,7 @@ resource "aws_lb_listener" "lb_listener_http"{
 }
 
 resource "aws_lb_listener" "lb_listener_https"{
-    load_balacer_arn = "${aws_lb.elb_name.arn}"
+    load_balancer_arn = "${aws_lb.elb_name.arn}"
     port = "443"
     protocol = "HTTPS"
     ssl_policy = "ELBSecurityPolicy-2021-03"
@@ -47,7 +47,7 @@ output lb_output_listener_http {
   depends_on  = []
 }
 
-output lb_output_listener_http {
+output lb_output_listener_https {
   value       = "${aws_lb_listener.lb_listener_https.arn}"
   sensitive   = true
   description = "description"
