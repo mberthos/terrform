@@ -81,14 +81,6 @@
       "hcl":false,
       "sensitive":false
     },
-    "attributes": {
-      "key":"some_key",
-      "value":"some_value",
-      "description":"some description",
-      "category":"terraform",
-      "hcl":false,
-      "sensitive":false
-    },
   "relationships": {
       "workspace": {
         "data": {
