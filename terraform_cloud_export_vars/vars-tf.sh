@@ -2,6 +2,7 @@
 
 #Get Workspace ID
 # curl   --header "Authorization: Bearer $TOKEN"   --header "Content-Type: application/vnd.api+json" "https://app.terraform.io/api/v2/organizations/minutrade/workspaces" | jq "."
+#First , run  export TOKEN=<token_id_terraform_cloud>
 echo "Executando o script..."
 arquivoPath="./payload.json"
 
