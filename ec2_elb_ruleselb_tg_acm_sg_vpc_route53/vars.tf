@@ -19,7 +19,7 @@ variable domain_name {
 variable allow_ip {
   type        = string
   default     = "0.0.0.0/24"
-  description = "description"
+  description = "VPN"
 }
 
 variable endpoint {
@@ -43,5 +43,17 @@ variable  profile {
 variable  versionProvider{
   type        = string
   default     = "2.7"
+  description = "description"
+}
+
+variable  vpc{
+  type        = string
+  default     = " "
+  description = "description"
+}
+
+variable  subnets{
+  type        = string
+  default     = " "
   description = "description"
 }

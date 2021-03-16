@@ -1,8 +1,8 @@
 resource "aws_lb" "elb_name" {
     name = "elb-name"
     load_balancer_type = "application"
-    security_groups = ["${aws_security_group.lb_sg.id}"]
-    subnets = ["${aws_subnet.subnet_name.id}"]
+    security_groups = ["${aws_security_group.instance_sg.id}"]
+    subnets = ["${var.subnets}"]
     idle_timeout = 120
     tags = {
         tag1 = "tag1"
