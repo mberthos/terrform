@@ -1,0 +1,101 @@
+{
+  "data": {
+    "type":"vars",
+    "attributes": {
+      "key":"ami",
+      "value":"ami-0ff8a91507f77f867",
+      "description":"AMI id",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"instance_type",
+      "value":"t2.small",
+      "description":"Instance Type",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"domain_name",
+      "value":"minu.co",
+      "description":"nome do dominio",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"allow_ip",
+      "value":"0.0.0.0/32",
+      "description":"VPN IP allowed to server and LB",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"endpoint",
+      "value":"vault.minu.co",
+      "description":"endpoit to access vault",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"region",
+      "value":"us-east-1",
+      "description":"AWS Region",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"profile",
+      "value":"default",
+      "description":"profile aws credential to execute",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"versionProvider",
+      "value":"~> 2.0",
+      "description":"AWS provider",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"vpc",
+      "value":"vpc-1111111111111",
+      "description":"VPC id to associate on solution",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"subnets",
+      "value":"sn-111111111111111",
+      "description":"subnets to associate on instance ",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+    "attributes": {
+      "key":"some_key",
+      "value":"some_value",
+      "description":"some description",
+      "category":"terraform",
+      "hcl":false,
+      "sensitive":false
+    },
+  "relationships": {
+      "workspace": {
+        "data": {
+          "id":"ws-hYMJRWCXr3MreNjC",
+          "type":"workspaces"
+        }
+      }
+    }
+  }
+}
